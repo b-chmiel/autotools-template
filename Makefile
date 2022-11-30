@@ -24,11 +24,9 @@ $(TARGET_RELEASE): $(BUILD_DIR_RELEASE)
 configure:
 	autoreconf --install
 
-# create release archive in build directory
 dist: $(BUILD_DIR_RELEASE)
 	$(MAKE) -C $(BUILD_DIR_RELEASE) dist
 
-# validate correctness of release archive
 distcheck: $(BUILD_DIR_RELEASE)
 	$(MAKE) -C $(BUILD_DIR_RELEASE) distcheck
 
