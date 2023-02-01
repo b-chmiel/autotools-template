@@ -9,3 +9,6 @@ configure
 config.h.in
 aclocal.m4
 Makefile.in
+compile
+config.guess
+config.sub

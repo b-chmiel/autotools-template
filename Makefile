@@ -32,11 +32,11 @@ distcheck: $(BUILD_DIR_RELEASE)
 
 $(BUILD_DIR_DEBUG): configure
 	-mkdir -v $(BUILD_DIR_DEBUG)
-	cd $(BUILD_DIR_DEBUG) && ../configure CXXFLAGS='-g -Og'
+	cd $(BUILD_DIR_DEBUG) && ../configure CFLAGS='-g -Og'
 
 $(BUILD_DIR_RELEASE): configure
 	-mkdir -v $(BUILD_DIR_RELEASE)
-	cd $(BUILD_DIR_RELEASE) && ../configure CXXFLAGS='-O3'
+	cd $(BUILD_DIR_RELEASE) && ../configure CFLAGS='-O3'
 
 clean:
 	-rm -rfv $(BUILD_DIR_DEBUG)
