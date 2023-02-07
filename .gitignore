@@ -1,5 +1,6 @@
 build-debug/
 build-release/
+build-aux/
 autom4te.cache/
 
 missing
@@ -9,3 +10,4 @@ configure
 config.h.in
 aclocal.m4
 Makefile.in
+configure~
